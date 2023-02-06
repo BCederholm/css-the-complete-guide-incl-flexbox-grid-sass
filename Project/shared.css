@@ -211,11 +211,18 @@ main {
     outline: none;
 }
 
-  .open {
-    display: block !important;
-  }
+.button[disabled] {
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
+}
 
-  @media (min-width: 40rem) {
+.open {
+    display: block !important;
+}
+
+@media (min-width: 40rem) {
     .main-footer__link {
         display: inline-block;
         margin: 0 1rem;
