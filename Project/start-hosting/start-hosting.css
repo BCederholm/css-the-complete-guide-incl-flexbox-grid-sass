@@ -45,7 +45,7 @@ main {
 .signup-form select:focus {
     outline: none;
     background: #d8f3df;
-    border-color: #2ddf5c
+    border-color: #2ddf5c;
 }
 
 .signup-form input[type="checkbox"] {
@@ -59,7 +59,7 @@ main {
 }
 
 .signup-form input[type="checkbox"]:checked {
-    background: #2ddf5c;    
+    background: #2ddf5c;
     border: #0e4f1f;
 }
 
@@ -84,7 +84,6 @@ main {
     }
 
     select#title {
-        /* grid-row: 2; */
         grid-column: span 2;
     }
     

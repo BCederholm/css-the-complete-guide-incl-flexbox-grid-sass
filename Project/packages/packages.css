@@ -36,6 +36,7 @@ main {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     border-color: #ff5454;
     /* border-color: #ff5454 !important; */
+    animation: push-up 1s ease-out forwards;
 }
 
 .package a {
@@ -55,6 +56,7 @@ main {
     background: #ff5454;
     padding: 0.5rem;
     transform: rotate(45deg) translate(3.5rem -1rem);
+    transform-origin: center;
     width: 12rem;
     text-align: center;
 }
@@ -68,7 +70,7 @@ main {
     border: 1px solid #0e4f1f;
     color: #0e4f1f;
     background: white;
-    font: 700 1.2rem "AnonymousPro", sans-serif;
+    font-size: 1.2rem;
 }
 
 .clearfix {
@@ -78,7 +80,6 @@ main {
 #plus {
     background: rgba(213, 255, 220, 0.95);
 }
-
 
 #free {
     background: rgba(234, 252, 237, 0.95);
@@ -126,5 +127,20 @@ main {
     #free:active {
       border-right-color: #ff5454;
     }
+}
+
+@keyframes push-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(-1.5rem);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
 
 }
+
